@@ -5,7 +5,7 @@ const users = [
 ];
 
 function getUserById(id) {
-  return users.find(user => user.id === id);
+  return users.find(user => user.id === id) ?? null;
 }
 
 module.exports = {
